@@ -1,6 +1,6 @@
-# iOS9-Day-by-Day
+# iOS9-day-by-day-oc
 
-This is a Objective-C version demo code of @[iOS9-day-by-day](https://github.com/shinobicontrols/iOS9-day-by-day)  from [@shinobicontrols](https://twitter.com/shinobicontrols)
+This is a Objective-C version demo code of [iOS9-day-by-day](https://github.com/shinobicontrols/iOS9-day-by-day)  from [@shinobicontrols](https://twitter.com/shinobicontrols)
 
 
 Apple delivered iOS 9 to the developer world at WWDC in June 2015, before launching it to the public in September. The iOS 9 SDK introduced some big changes to the user, such as iPad multitasking and search and Siri enhancements. The majority of the new features were focused on optimization and performance enhancements. A large number of new APIs were introduced, and iOS9 Day-by-Day is a review of the most important of these. 
@@ -16,3 +16,8 @@ iOS9 Day-by-Day is a blog series which dives into all the new features available
 The blog posts typically have a project which demonstrates the functionality in-action, rather than just being a purely theoretical overview of the technology.
 
 If you have any comments or suggestions for future posts, please feel free contact me [@christhegrant](https://twitter.com/christhegrant), and feel free to fork the repo and have a play around with the code!
+
+Thanks!
+Chris
+
+[@christhegrant](https://twitter.com/christhegrant) [@shinobicontrols](https://twitter.com/shinobicontrols)
