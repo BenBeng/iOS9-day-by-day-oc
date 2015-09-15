@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8eQ-ce-Pzn">
+                                <rect key="frame" x="20" y="20" width="560" height="580"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="YdI-dQ-6c4" userLabel="People Stack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="524"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pete" translatesAutoresizingMaskIntoConstraints="NO" id="DTb-X7-URo">
+                                                <rect key="frame" x="0.0" y="0.0" width="125" height="524"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ben" translatesAutoresizingMaskIntoConstraints="NO" id="bIl-JR-pRY">
+                                                <rect key="frame" x="130.5" y="0.0" width="132" height="524"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="becky" translatesAutoresizingMaskIntoConstraints="NO" id="0Bu-iH-zr1">
+                                                <rect key="frame" x="268.5" y="0.0" width="151" height="524"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ray" translatesAutoresizingMaskIntoConstraints="NO" id="rwH-74-qpp">
+                                                <rect key="frame" x="425" y="0.0" width="135" height="524"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </imageView>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VCl-Lb-b6k">
+                                        <rect key="frame" x="0.0" y="524" width="560" height="28"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distribution:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Zt-yK-5kB">
+                                                <rect key="frame" x="0.0" y="0.0" width="93.5" height="28"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="3" translatesAutoresizingMaskIntoConstraints="NO" id="UL4-hK-wUM">
+                                                <rect key="frame" x="101.5" y="0.0" width="458.5" height="29"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="28" id="b17-b4-eni"/>
+                                                </constraints>
+                                                <segments>
+                                                    <segment title="Fill"/>
+                                                    <segment title="Fill Equally"/>
+                                                    <segment title="Fill Proportionally"/>
+                                                    <segment title="Equal Spacing"/>
+                                                    <segment title="Equal Centering"/>
+                                                </segments>
+                                                <connections>
+                                                    <action selector="distributionSegmentSelected:" destination="BYZ-38-t0r" eventType="valueChanged" id="H5p-5N-tpY"/>
+                                                </connections>
+                                            </segmentedControl>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BEw-nk-wwI">
+                                        <rect key="frame" x="0.0" y="552" width="560" height="28"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alignment:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5i-u6-vvM">
+                                                <rect key="frame" x="0.0" y="0.0" width="82" height="28"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="s9f-Rd-Otf">
+                                                <rect key="frame" x="90" y="0.0" width="470" height="29"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="28" id="L6n-CA-UPM"/>
+                                                </constraints>
+                                                <segments>
+                                                    <segment title="Fill"/>
+                                                    <segment title="Top"/>
+                                                    <segment title="Center"/>
+                                                    <segment title="Bottom"/>
+                                                </segments>
+                                                <connections>
+                                                    <action selector="alignmentSegmentSelected:" destination="BYZ-38-t0r" eventType="valueChanged" id="951-HC-m6M"/>
+                                                </connections>
+                                            </segmentedControl>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                </subviews>
+                                <animations/>
+                            </stackView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="8eQ-ce-Pzn" secondAttribute="trailing" id="NX0-rq-QWV"/>
+                            <constraint firstItem="8eQ-ce-Pzn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="eX9-Qc-24w"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8eQ-ce-Pzn" secondAttribute="bottom" id="fF7-5S-NMK"/>
+                            <constraint firstItem="8eQ-ce-Pzn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="yeX-eX-tbX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="peopleStackView" destination="YdI-dQ-6c4" id="kpL-wQ-ejk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="becky" width="151" height="178"/>
+        <image name="ben" width="132" height="143"/>
+        <image name="pete" width="125" height="159"/>
+        <image name="ray" width="135" height="170"/>
+    </resources>
+</document>
